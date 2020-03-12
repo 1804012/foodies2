@@ -5,12 +5,4 @@
 //----------------------------------------------------//
 /*////[FOOTER]
 ________________________________________________________*/
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 30px;
-  font-weight: bold;
-  margin-top: 20px;
-}
+@import '_mixin';
