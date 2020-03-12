@@ -1,0 +1,25 @@
+//----------------------------------------------------//
+//                                                    //
+//            //    Grille Desktop     //             //
+//                grilleDesktop.scss                  //
+//----------------------------------------------------//
+/*////[INTERFACE]
+________________________________________________________*/
+div.interface {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60vw;
+    min-height: 360px;
+    margin-top: 60px;
+    & section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 260px;
+        margin-top: 60px;
+        border: 3px hsl(0, 0%, 0%) solid;
+    }
+  }

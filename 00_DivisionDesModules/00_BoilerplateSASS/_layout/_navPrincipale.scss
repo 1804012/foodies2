@@ -1,0 +1,18 @@
+//----------------------------------------------------//
+//                                                    //
+//            // Navigation Principale //             //
+//                nav.principlae.scss                 //
+//----------------------------------------------------//
+/*////[LIENS]
+________________________________________________________*/
+a {
+    color: inherit;
+    text-decoration: none;
+    width: 180px;
+    padding: 15px;
+    background-color: hsl(21, 87%, 57%);
+    color: 	hsl(0, 0%, 100%);
+    &:hover {
+      background-color:hsl(212, 48%, 31%);
+    }
+  }
