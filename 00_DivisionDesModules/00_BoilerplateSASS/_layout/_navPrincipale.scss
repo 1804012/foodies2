@@ -10,7 +10,7 @@ ________________________________________________________*/
 nav {    
     background-color: var(--noir);
     & a {
-        
+        @include display_flex_row_center;
         text-decoration: none;
         color: var(--blanc);
         width: 100%;
