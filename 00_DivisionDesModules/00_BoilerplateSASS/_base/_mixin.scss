@@ -3,3 +3,17 @@
 //            //   Liste des Mixins    //             //
 //                    mixin.scss                      //
 //----------------------------------------------------//
+
+@mixin display_flex_column_center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin display_flex_row_center {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
