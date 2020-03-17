@@ -5,23 +5,4 @@
 //----------------------------------------------------//
 /*////[LIENS]
 ________________________________________________________*/
-@import '_mixin';
 
-nav {    
-    background-color: var(--noir);
-    & a {
-        @include display_flex_row_center;
-        text-decoration: none;
-        color: var(--blanc);
-        width: 100%;
-        height: 100%;
-
-        &:hover {
-            background-color: var(--orange);
-        }
-
-        & li {
-            list-style-type: none;
-        }
-    }
-}
