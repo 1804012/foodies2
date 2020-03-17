@@ -1,2 +1,11 @@
 /* Header */
 
+header {
+    @include display_flex_column_center;
+    width: 100%;
+    padding: 2em;
+
+    & a {
+        width: 30em;
+    }
+}
