@@ -5,3 +5,14 @@
 //----------------------------------------------------//
 /*////[FOOTER]
 ________________________________________________________*/
+footer {
+    @include display_flex_column_center;
+    width: 100%;
+    height: 3em;
+    background-color: var(--noir);
+    color: var(--blanc);
+
+    & p {
+        height: 100%;
+    }
+}
