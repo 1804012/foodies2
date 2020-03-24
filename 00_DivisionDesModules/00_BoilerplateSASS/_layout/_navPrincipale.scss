@@ -13,13 +13,6 @@ nav {
     top: 0;
     width: 100%;
 
-    & i.material-icons {
-        font-size: 4em;
-        position: absolute;
-        top: 0.25em;
-        left: 0.25em;
-    }
-
     & i.close {
         color: var(--orange);
     }
@@ -51,10 +44,10 @@ nav {
             }
         }
     }
-}
 
-nav img {
-    display: block;
-    margin: auto;
-    width: 25%;
+    & img {
+        display: block;
+        margin: auto;
+        width: 30%;
+    }
 }

@@ -8,4 +8,11 @@ header {
     & a {
         width: 20em;
     }
+
+    & i.material-icons {
+        font-size: 4em;
+        position: absolute;
+        top: 0.25em;
+        left: 0.25em;
+    }
 }
