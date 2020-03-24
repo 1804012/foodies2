@@ -4,6 +4,10 @@ header {
     @include display_flex_column_center;
     width: 100%;
     padding: 2em;
+    position: fixed;
+    top: 0;
+    background-color: var(--blanc);
+    z-index: 100;
 
     & a {
         width: 20em;

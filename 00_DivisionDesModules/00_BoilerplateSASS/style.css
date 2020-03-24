@@ -55,6 +55,10 @@ header {
           align-items: center;
   width: 100%;
   padding: 2em;
+  position: fixed;
+  top: 0;
+  background-color: var(--blanc);
+  z-index: 100;
 }
 
 header a {
@@ -76,6 +80,7 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 nav i.close {
@@ -135,23 +140,71 @@ section ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85%;
+  width: 90%;
 }
 
 section ul li {
   list-style-type: none;
   text-align: right;
+  height: 70em;
 }
 
 section ul li h2 {
+  position: relative;
+  top: 6.5em;
   font-size: 2.5em;
   font-weight: 700;
   font-style: italic;
   color: var(--orange);
+  margin: 0;
+}
+
+section ul li p.numero {
+  position: relative;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 15em;
+  margin: 0;
+  top: 1.7em;
+  right: 0;
 }
 
 section ul li img {
   display: block;
+}
+
+section ul li p {
+  font-size: 1.5em;
+}
+
+section ul li a {
+  text-decoration: none;
+  color: var(--blanc);
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  left: 5em;
+  top: 2em;
+}
+
+section ul li a div.boutonListe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--vert);
+  font-size: 2em;
+  width: 40%;
+  height: 2.5em;
+  border-radius: 0.5em;
 }
 
 /* Publicité */
