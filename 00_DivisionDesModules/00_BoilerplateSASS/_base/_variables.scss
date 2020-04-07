@@ -1,8 +1,9 @@
 /* liste des variables */
 
 :root {
-    --blanc: #ffffff;
-    --noir: #000000;
-    --orange: #ff6c48;
-    --vert: #bbc373;
+    --blanc: hsl(0, 0%, 100%);
+    --noir: hsl(0, 0%, 0%);
+    --orange: hsl(12, 100%, 64%);
+    --vert: hsl(66, 40%, 61%);
+    --vert-hover: hsl(66, 30%, 51%);
 }

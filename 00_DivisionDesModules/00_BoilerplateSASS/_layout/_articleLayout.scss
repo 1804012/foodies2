@@ -1,6 +1,178 @@
 /* Layout de l'article */
-article.articleLaytout {
+article.articleLayout {
+    padding-top: 25em;
+    @include display_flex_column_center;
+    margin: {
+        left: 1.5em;
+        right: 1.5em;
+    }
+
+    & span {
+        font-size: 20em;
+        font-family: Seymour One;
+        color: var(--blanc);
+        -webkit-text-stroke: 5px var(--noir);
+        letter-spacing: -0.125em;
+        position: absolute;
+        top: 0.23em;
+    }
+
     & h3 {
+        display: none;
+    }
+
+    aside.membre {
+        display: none;
+    }
+
+    & h1 {
+        color: var(--orange);
+        font-size: 3.7em;
+        text-transform: uppercase;
+        font-style: italic;
+        position: relative;
+        top: -1.5em;
+    }
+
+    & h4 {
+        display: none;
+    }
+
+    p.info {
+        font-size: 2em;
+        width: 90%;
+        text-align: justify;
+        text-align-last: center;
+        position: relative;
+        top: -6.5em;
+        font-weight: bolder;
+    }
+
+    section.article {
+        margin: {
+            top: -12em;
+        }
+
+        & h2 {
+            color: var(--orange);
+            font-size: 2.5em;
+            text-align: center;  
+
+        }
+
+        & p {
+            margin: auto;
+            width: 90%;
+            font-size: 1.5em;
+            text-align: justify;
+            text-align-last: center;
+        }
+    }
+    
+    section.bonheur {
+        margin : {
+            top: -8em;
+        }
+
+        & h2 {
+            text-align: end;
+            position: relative;
+            top: 3.5em;
+            right: 1em;
+            line-height: 1.5em;
+        }
+
+        & p {
+            text-align: end;
+            width: 75%;
+            position: relative;
+            top: -10em;
+            right: -1.5em;
+            font-weight: bolder;
+            background-color: hsla(0, 0%, 100%, 0.75);
+        }
+
+        & img {
+            width: 75%;
+        }
+    }
+
+    & section.recettes {
+        & h2 {
+            width: 50%;
+            margin: auto;
+            color: var(--orange);
+            font-size: 2.5em;
+            text-align: center;
+        }
         
+        & p {
+            margin: auto;
+            padding: 1em;
+            width: 90%;
+            font-size: 1.5em;
+            text-align: justify;
+            text-align-last: center;
+        }
+        
+        & div.suggestion {
+            @include display_flex_column_center;
+            margin-bottom: -10em;
+            color: var(--blanc);
+            & img {
+                width: 100%;
+            }
+            
+            & h3 {
+                display: block;
+                text-align: center;
+                position: relative;
+                top: -23em;
+                font-size: 2em;
+            }
+            
+            & p {
+                position: relative;
+                bottom: 15em;
+            }
+
+            & a {
+                position: relative;
+                bottom: 14em;
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
+
+            & div.bouton {
+                @include display_flex_column_center;
+                color: var(--blanc);
+                background-color: var(--vert);
+                width: 11em;
+                height: 3em;
+                border-radius: 1em;
+
+                &:hover {
+                    background-color: var(--vert-hover);
+                }
+            }
+        }
+        
+        & div.suggestion:nth-of-type(2) {
+            margin-bottom: -10em;
+            & p {
+                position: relative;
+                bottom: 23em;
+            }
+
+            & a {
+                position: relative;
+                bottom: 22em;
+            }
+        }
+
+        & div.suggestion:nth-of-type(3) {
+            margin-top: -20em;
+        }
     }
 }

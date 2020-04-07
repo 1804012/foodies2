@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* liste des variables */
 :root {
-  --blanc: #ffffff;
-  --noir: #000000;
-  --orange: #ff6c48;
-  --vert: #bbc373;
+  --blanc: hsl(0, 0%, 100%);
+  --noir: hsl(0, 0%, 0%);
+  --orange: hsl(12, 100%, 64%);
+  --vert: hsl(66, 40%, 61%);
+  --vert-hover: hsl(66, 30%, 51%);
 }
 
 /*////[HTML & BODY]
@@ -63,6 +64,7 @@ header {
 
 header a {
   width: 20em;
+  z-index: 1000;
 }
 
 header i.material-icons {
@@ -122,11 +124,11 @@ nav img {
 
 /* Navigation de la langue */
 /* Liste des produits */
-section h1 {
+section.liste h1 {
   display: none;
 }
 
-section ul {
+section.liste ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,13 +145,13 @@ section ul {
   width: 90%;
 }
 
-section ul li {
+section.liste ul li {
   list-style-type: none;
   text-align: right;
   height: 70em;
 }
 
-section ul li h2 {
+section.liste ul li h2 {
   position: relative;
   top: 6.5em;
   font-size: 2.5em;
@@ -159,7 +161,7 @@ section ul li h2 {
   margin: 0;
 }
 
-section ul li p.numero {
+section.liste ul li p.numero {
   position: relative;
   font-family: 'Seymour One', sans-serif;
   font-size: 15em;
@@ -168,15 +170,15 @@ section ul li p.numero {
   right: 0;
 }
 
-section ul li img {
+section.liste ul li img {
   display: block;
 }
 
-section ul li p {
+section.liste ul li p {
   font-size: 1.5em;
 }
 
-section ul li a {
+section.liste ul li a {
   text-decoration: none;
   color: var(--blanc);
   text-transform: uppercase;
@@ -186,7 +188,7 @@ section ul li a {
   top: 2em;
 }
 
-section ul li a div.boutonListe {
+section.liste ul li a div.boutonListe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,7 +236,214 @@ footer p {
   height: 100%;
 }
 
-/* Navigation du footer */
+/* Layout de l'article */
+article.articleLayout {
+  padding-top: 25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+article.articleLayout span {
+  font-size: 20em;
+  font-family: Seymour One;
+  color: var(--blanc);
+  -webkit-text-stroke: 5px var(--noir);
+  letter-spacing: -0.125em;
+  position: absolute;
+  top: 0.23em;
+}
+
+article.articleLayout h3 {
+  display: none;
+}
+
+article.articleLayout aside.membre {
+  display: none;
+}
+
+article.articleLayout h1 {
+  color: var(--orange);
+  font-size: 3.7em;
+  text-transform: uppercase;
+  font-style: italic;
+  position: relative;
+  top: -1.5em;
+}
+
+article.articleLayout h4 {
+  display: none;
+}
+
+article.articleLayout p.info {
+  font-size: 2em;
+  width: 90%;
+  text-align: justify;
+  text-align-last: center;
+  position: relative;
+  top: -6.5em;
+  font-weight: bolder;
+}
+
+article.articleLayout section.article {
+  margin-top: -12em;
+}
+
+article.articleLayout section.article h2 {
+  color: var(--orange);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+article.articleLayout section.article p {
+  margin: auto;
+  width: 90%;
+  font-size: 1.5em;
+  text-align: justify;
+  text-align-last: center;
+}
+
+article.articleLayout section.bonheur {
+  margin-top: -8em;
+}
+
+article.articleLayout section.bonheur h2 {
+  text-align: end;
+  position: relative;
+  top: 3.5em;
+  right: 1em;
+  line-height: 1.5em;
+}
+
+article.articleLayout section.bonheur p {
+  text-align: end;
+  width: 75%;
+  position: relative;
+  top: -10em;
+  right: -1.5em;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+article.articleLayout section.bonheur img {
+  width: 75%;
+}
+
+article.articleLayout section.recettes h2 {
+  width: 50%;
+  margin: auto;
+  color: var(--orange);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+article.articleLayout section.recettes p {
+  margin: auto;
+  padding: 1em;
+  width: 90%;
+  font-size: 1.5em;
+  text-align: justify;
+  text-align-last: center;
+}
+
+article.articleLayout section.recettes div.suggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -10em;
+  color: var(--blanc);
+}
+
+article.articleLayout section.recettes div.suggestion img {
+  width: 100%;
+}
+
+article.articleLayout section.recettes div.suggestion h3 {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -23em;
+  font-size: 2em;
+}
+
+article.articleLayout section.recettes div.suggestion p {
+  position: relative;
+  bottom: 15em;
+}
+
+article.articleLayout section.recettes div.suggestion a {
+  position: relative;
+  bottom: 14em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+article.articleLayout section.recettes div.suggestion div.bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--blanc);
+  background-color: var(--vert);
+  width: 11em;
+  height: 3em;
+  border-radius: 1em;
+}
+
+article.articleLayout section.recettes div.suggestion div.bouton:hover {
+  background-color: var(--vert-hover);
+}
+
+article.articleLayout section.recettes div.suggestion:nth-of-type(2) {
+  margin-bottom: -10em;
+}
+
+article.articleLayout section.recettes div.suggestion:nth-of-type(2) p {
+  position: relative;
+  bottom: 23em;
+}
+
+article.articleLayout section.recettes div.suggestion:nth-of-type(2) a {
+  position: relative;
+  bottom: 22em;
+}
+
+article.articleLayout section.recettes div.suggestion:nth-of-type(3) {
+  margin-top: -20em;
+}
+
 /* Gallerie d'images */
 /* Login */
 /*# sourceMappingURL=style.css.map */
