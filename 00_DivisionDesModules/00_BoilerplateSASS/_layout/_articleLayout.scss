@@ -97,6 +97,23 @@ article.articleLayout {
         }
     }
 
+    & section.publicite {
+        color: var(--noir);
+        display: block;
+        
+        & div.pub01 {
+            display: block;
+        }
+        
+        & div.pub02 {
+            display: block;
+        }
+        
+        & div.pub03 {
+            display: block;
+        }
+    }
+
     & section.recettes {
         & h2 {
             width: 50%;
@@ -119,6 +136,7 @@ article.articleLayout {
             @include display_flex_column_center;
             margin-bottom: -10em;
             color: var(--blanc);
+            
             & img {
                 width: 100%;
             }
@@ -127,7 +145,7 @@ article.articleLayout {
                 display: block;
                 text-align: center;
                 position: relative;
-                top: -23em;
+                top: -22em;
                 font-size: 2em;
             }
             
@@ -138,7 +156,7 @@ article.articleLayout {
 
             & a {
                 position: relative;
-                bottom: 14em;
+                bottom: 15em;
                 text-align: center;
                 text-decoration: none;
                 font-size: 1.5em;
@@ -167,7 +185,7 @@ article.articleLayout {
 
             & a {
                 position: relative;
-                bottom: 22em;
+                bottom: 23em;
             }
         }
 

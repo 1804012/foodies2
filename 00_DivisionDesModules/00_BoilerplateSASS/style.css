@@ -227,13 +227,14 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 3em;
+  height: 10em;
   background-color: var(--noir);
   color: var(--blanc);
 }
 
 footer p {
   height: 100%;
+  margin-top: 4em;
 }
 
 /* Layout de l'article */
@@ -341,6 +342,23 @@ article.articleLayout section.bonheur img {
   width: 75%;
 }
 
+article.articleLayout section.publicite {
+  color: var(--noir);
+  display: block;
+}
+
+article.articleLayout section.publicite div.pub01 {
+  display: block;
+}
+
+article.articleLayout section.publicite div.pub02 {
+  display: block;
+}
+
+article.articleLayout section.publicite div.pub03 {
+  display: block;
+}
+
 article.articleLayout section.recettes h2 {
   width: 50%;
   margin: auto;
@@ -384,7 +402,7 @@ article.articleLayout section.recettes div.suggestion h3 {
   display: block;
   text-align: center;
   position: relative;
-  top: -23em;
+  top: -22em;
   font-size: 2em;
 }
 
@@ -395,7 +413,7 @@ article.articleLayout section.recettes div.suggestion p {
 
 article.articleLayout section.recettes div.suggestion a {
   position: relative;
-  bottom: 14em;
+  bottom: 15em;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
@@ -437,7 +455,7 @@ article.articleLayout section.recettes div.suggestion:nth-of-type(2) p {
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(2) a {
   position: relative;
-  bottom: 22em;
+  bottom: 23em;
 }
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(3) {
