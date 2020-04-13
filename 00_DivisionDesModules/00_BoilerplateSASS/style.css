@@ -406,14 +406,12 @@ article.articleLayout section.recettes div.suggestion h3 {
   font-size: 2em;
 }
 
-article.articleLayout section.recettes div.suggestion p {
+article.articleLayout section.recettes div.suggestion .info_suggestion, article.articleLayout section.recettes div.suggestion a {
   position: relative;
   bottom: 15em;
 }
 
 article.articleLayout section.recettes div.suggestion a {
-  position: relative;
-  bottom: 15em;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;

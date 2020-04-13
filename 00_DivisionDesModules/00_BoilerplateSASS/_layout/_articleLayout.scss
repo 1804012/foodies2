@@ -149,14 +149,13 @@ article.articleLayout {
                 font-size: 2em;
             }
             
-            & p {
+            & .info_suggestion {
                 position: relative;
                 bottom: 15em;
             }
 
             & a {
-                position: relative;
-                bottom: 15em;
+                @extend .info_suggestion;
                 text-align: center;
                 text-decoration: none;
                 font-size: 1.5em;
