@@ -18,6 +18,10 @@ body {
     padding: 0;
     width: 100vw;
 }
+
+.unscrollable {
+  overflow: hidden;
+}
 /*////[INTERFACE ET FOOTER]
 ________________________________________________________*/
   div.interface, footer {

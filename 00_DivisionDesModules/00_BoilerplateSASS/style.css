@@ -24,6 +24,10 @@ body {
   width: 100vw;
 }
 
+.unscrollable {
+  overflow: hidden;
+}
+
 /*////[INTERFACE ET FOOTER]
 ________________________________________________________*/
 div.interface, footer {
@@ -120,6 +124,37 @@ nav img {
   display: block;
   margin: auto;
   width: 30%;
+}
+
+@-webkit-keyframes menu_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menu_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ouvert {
+  display: block;
+  -webkit-animation-name: menu_animation;
+          animation-name: menu_animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.fermer {
+  display: none;
+  opacity: 0;
 }
 
 /* Navigation de la langue */

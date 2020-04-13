@@ -52,3 +52,20 @@ nav {
         width: 30%;
     }
 }
+
+@keyframes menu_animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.ouvert {
+    display:block;
+    animation-name: menu_animation;
+    animation-duration: 1s;
+    
+}
+
+.fermer {
+    display: none;
+    opacity: 0;
+}
