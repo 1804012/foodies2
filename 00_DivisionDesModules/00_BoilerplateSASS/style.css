@@ -464,7 +464,6 @@ article.articleLayout section.recettes div.suggestion h3 {
 }
 
 article.articleLayout section.recettes div.suggestion p.info_suggestion {
-  z-index: 1000;
   position: relative;
   bottom: 18em;
 }
@@ -479,18 +478,16 @@ article.articleLayout section.recettes div.suggestion:nth-of-type(2) {
 }
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(2) p.info_suggestion {
-  z-index: 1000;
   position: relative;
-  bottom: 29em;
+  bottom: 27em;
 }
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(2) a {
   position: relative;
-  bottom: 29em;
+  bottom: 27em;
 }
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(3) p.info_suggestion {
-  z-index: 1000;
   position: relative;
   bottom: 21em;
 }

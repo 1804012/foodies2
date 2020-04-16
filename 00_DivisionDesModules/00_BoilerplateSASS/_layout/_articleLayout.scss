@@ -156,7 +156,6 @@ article.articleLayout {
             }
 
             & p.info_suggestion {
-                z-index: 1000;
                 position: relative;
                 bottom: 18em;
             }
@@ -171,21 +170,19 @@ article.articleLayout {
         & div.suggestion:nth-of-type(2) {
             margin-bottom: -20em;
             & p.info_suggestion {
-                z-index: 1000;
                 position: relative;
-                bottom: 29em;
+                bottom: 27em;
             }
 
             & a {
                 @extend .lien_recette;
                 position: relative;
-                bottom: 29em;
+                bottom: 27em;
             }
         }
 
         & div.suggestion:nth-of-type(3) {
             & p.info_suggestion {
-                z-index: 1000;
                 position: relative;
                 bottom: 21em;
             }

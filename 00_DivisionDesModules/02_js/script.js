@@ -8,6 +8,7 @@
     $('i.menu').on('click', function(){
         $('nav').removeClass('fermer').addClass('ouvert');
         $('body').addClass('unscrollable');
+        $("html, body").animate({scrollTop: 0}, 0);
     });
     $('i.close').on('click', function(){
         $('nav').removeClass('ouvert').addClass('fermer');
