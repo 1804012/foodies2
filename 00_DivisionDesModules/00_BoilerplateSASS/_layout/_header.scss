@@ -10,14 +10,14 @@ header {
     z-index: 100;
 
     & a {
-        width: 20em;
+        width: 15em;
         z-index: 1000;
     }
 
     & i.material-icons {
-        font-size: 4em;
+        font-size: 3em;
         position: absolute;
-        top: 0.25em;
-        left: 0.25em;
+        top: 0.4em;
+        left: 0.4em;
     }
 }

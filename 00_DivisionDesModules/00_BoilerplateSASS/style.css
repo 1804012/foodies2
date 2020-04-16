@@ -67,15 +67,15 @@ header {
 }
 
 header a {
-  width: 20em;
+  width: 15em;
   z-index: 1000;
 }
 
 header i.material-icons {
-  font-size: 4em;
+  font-size: 3em;
   position: absolute;
-  top: 0.25em;
-  left: 0.25em;
+  top: 0.4em;
+  left: 0.4em;
 }
 
 /*////[LIENS]
@@ -91,6 +91,7 @@ nav {
 
 nav i.close {
   color: var(--orange);
+  font-size: 2em;
 }
 
 nav ul {
@@ -122,7 +123,10 @@ nav ul li::after {
 
 nav img {
   display: block;
-  margin: auto;
+  margin-top: -3em;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   width: 30%;
 }
 
@@ -269,12 +273,12 @@ footer {
 
 footer p {
   height: 100%;
-  margin-top: 4em;
+  margin-top: 8em;
+  font-size: 0.6em;
 }
 
 /* Layout de l'article */
 article.articleLayout {
-  padding-top: 25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,18 +292,19 @@ article.articleLayout {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 25em;
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
 
 article.articleLayout span {
-  font-size: 20em;
+  font-size: 16em;
   font-family: Seymour One;
   color: var(--blanc);
   -webkit-text-stroke: 5px var(--noir);
   letter-spacing: -0.125em;
   position: absolute;
-  top: 0.23em;
+  top: 0.28em;
 }
 
 article.articleLayout h3 {
@@ -375,23 +380,6 @@ article.articleLayout section.bonheur p {
 
 article.articleLayout section.bonheur img {
   width: 75%;
-}
-
-article.articleLayout section.publicite {
-  color: var(--noir);
-  display: block;
-}
-
-article.articleLayout section.publicite div.pub01 {
-  display: block;
-}
-
-article.articleLayout section.publicite div.pub02 {
-  display: block;
-}
-
-article.articleLayout section.publicite div.pub03 {
-  display: block;
 }
 
 article.articleLayout section.recettes h2 {

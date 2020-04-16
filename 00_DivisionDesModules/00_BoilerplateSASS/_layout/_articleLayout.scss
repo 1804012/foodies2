@@ -1,20 +1,21 @@
 /* Layout de l'article */
 article.articleLayout {
-    padding-top: 25em;
     @include display_flex_column_center;
+    padding-top: 25em;
+
     margin: {
         left: 1.5em;
         right: 1.5em;
     }
 
     & span {
-        font-size: 20em;
+        font-size: 16em;
         font-family: Seymour One;
         color: var(--blanc);
         -webkit-text-stroke: 5px var(--noir);
         letter-spacing: -0.125em;
         position: absolute;
-        top: 0.23em;
+        top: 0.28em;
     }
 
     & h3 {
@@ -97,22 +98,7 @@ article.articleLayout {
         }
     }
 
-    & section.publicite {
-        color: var(--noir);
-        display: block;
-        
-        & div.pub01 {
-            display: block;
-        }
-        
-        & div.pub02 {
-            display: block;
-        }
-        
-        & div.pub03 {
-            display: block;
-        }
-    }
+    
 
     & section.recettes {
         & h2 {

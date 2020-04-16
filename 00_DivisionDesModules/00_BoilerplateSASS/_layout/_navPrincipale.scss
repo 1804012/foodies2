@@ -16,6 +16,7 @@ nav {
 
     & i.close {
         color: var(--orange);
+        font-size: 2em;
     }
 
     & ul {
@@ -48,7 +49,12 @@ nav {
 
     & img {
         display: block;
-        margin: auto;
+        margin: {
+            top: -3em;
+            right: auto;
+            bottom: auto;
+            left: auto;
+        }
         width: 30%;
     }
 }
