@@ -43,7 +43,8 @@ div.interface, footer {
 ________________________________________________________*/
 /* Grille pour le mobile */
 /* Sous grille du contenu */
-/* Header */
+/*////[HEADER]
+________________________________________________________*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +79,11 @@ header i.material-icons {
   left: 0.4em;
 }
 
+/*////[BREAKPOINTS]
+________________________________________________________*/
+/* TABLETTE VERTICALE */
+/* TABLETTE HORIZONTALE */
+/* DESKTOP */
 /*////[LIENS]
 ________________________________________________________*/
 nav {
@@ -130,6 +136,8 @@ nav img {
   width: 30%;
 }
 
+/*////[ANIMATION]
+________________________________________________________*/
 @-webkit-keyframes menu_animation {
   from {
     opacity: 0;
@@ -138,7 +146,6 @@ nav img {
     opacity: 1;
   }
 }
-
 @keyframes menu_animation {
   from {
     opacity: 0;
@@ -161,6 +168,11 @@ nav img {
   opacity: 0;
 }
 
+/*////[BREAKPOINTS]
+________________________________________________________*/
+/* TABLETTE VERTICALE */
+/* TABLETTE HORIZONTALE */
+/* DESKTOP */
 /* Navigation de la langue */
 /* Liste des produits */
 section.liste h1 {
@@ -277,7 +289,13 @@ footer p {
   font-size: 0.6em;
 }
 
-/* Layout de l'article */
+/*////[BREAKPOINTS]
+________________________________________________________*/
+/* TABLETTE VERTICALE */
+/* TABLETTE HORIZONTALE */
+/* DESKTOP */
+/*////[LAYOUT DE L'ARTICLE]
+________________________________________________________*/
 article.articleLayout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,6 +515,11 @@ article.articleLayout section.recettes div.suggestion:nth-of-type(3) a {
   bottom: 21em;
 }
 
+/*////[BREAKPOINTS]
+________________________________________________________*/
+/* TABLETTE VERTICALE */
+/* TABLETTE HORIZONTALE */
+/* DESKTOP */
 /* Gallerie d'images */
 /* Login */
 /*# sourceMappingURL=style.css.map */

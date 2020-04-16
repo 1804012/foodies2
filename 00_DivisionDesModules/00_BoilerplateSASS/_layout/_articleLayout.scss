@@ -1,4 +1,5 @@
-/* Layout de l'article */
+/*////[LAYOUT DE L'ARTICLE]
+________________________________________________________*/
 article.articleLayout {
     @include display_flex_column_center;
     padding-top: 25em;
@@ -194,4 +195,25 @@ article.articleLayout {
             }
         }
     }
+}
+
+/*////[BREAKPOINTS]
+________________________________________________________*/
+
+/* TABLETTE VERTICALE */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* TABLETTE HORIZONTALE */
+
+@media screen and (min-width: 1024px) {
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1920px) {
+
 }

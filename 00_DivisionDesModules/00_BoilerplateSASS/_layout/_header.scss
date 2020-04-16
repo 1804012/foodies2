@@ -1,4 +1,5 @@
-/* Header */
+/*////[HEADER]
+________________________________________________________*/
 
 header {
     @include display_flex_column_center;
@@ -20,4 +21,25 @@ header {
         top: 0.4em;
         left: 0.4em;
     }
+}
+
+/*////[BREAKPOINTS]
+________________________________________________________*/
+
+/* TABLETTE VERTICALE */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* TABLETTE HORIZONTALE */
+
+@media screen and (min-width: 1024px) {
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1920px) {
+
 }
