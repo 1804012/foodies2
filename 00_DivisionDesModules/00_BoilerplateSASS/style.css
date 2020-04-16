@@ -81,8 +81,6 @@ header i.material-icons {
 
 /*////[BREAKPOINTS]
 ________________________________________________________*/
-/* TABLETTE VERTICALE */
-/* TABLETTE HORIZONTALE */
 /* DESKTOP */
 /*////[LIENS]
 ________________________________________________________*/
@@ -171,6 +169,12 @@ ________________________________________________________*/
 /*////[BREAKPOINTS]
 ________________________________________________________*/
 /* TABLETTE VERTICALE */
+@media screen and (min-width: 768px) {
+  nav img {
+    margin-top: -6em;
+  }
+}
+
 /* TABLETTE HORIZONTALE */
 /* DESKTOP */
 /* Navigation de la langue */
@@ -291,7 +295,6 @@ footer p {
 
 /*////[BREAKPOINTS]
 ________________________________________________________*/
-/* TABLETTE VERTICALE */
 /* TABLETTE HORIZONTALE */
 /* DESKTOP */
 /*////[LAYOUT DE L'ARTICLE]
@@ -518,6 +521,68 @@ article.articleLayout section.recettes div.suggestion:nth-of-type(3) a {
 /*////[BREAKPOINTS]
 ________________________________________________________*/
 /* TABLETTE VERTICALE */
+@media screen and (min-width: 768px) {
+  article.articleLayout h1 {
+    top: -2em;
+  }
+  article.articleLayout p.info {
+    top: -6em;
+    font-size: 1em;
+    width: 100%;
+  }
+  article.articleLayout section.article h2 {
+    margin-top: 5em;
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 1em;
+  }
+  article.articleLayout section.article p {
+    text-align: left;
+    text-align-last: left;
+    width: 95%;
+    margin-left: 1.6em;
+  }
+  article.articleLayout section.article section.bonheur {
+    width: 100vw;
+  }
+  article.articleLayout section.article section.bonheur h2 {
+    text-align: left;
+    top: 1em;
+    right: 0;
+    width: 30em;
+  }
+  article.articleLayout section.article section.bonheur h2 br {
+    display: none;
+  }
+  article.articleLayout section.article section.bonheur img {
+    width: 100%;
+  }
+  article.articleLayout section.article section.bonheur p {
+    text-align: left;
+    width: 90%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--blanc);
+  }
+  article.articleLayout section.promo {
+    margin-top: -5em;
+    margin-bottom: 1em;
+  }
+  article.articleLayout section.promo img {
+    height: 11em;
+  }
+  article.articleLayout section.recettes h2 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 0;
+  }
+  article.articleLayout section.recettes p {
+    text-align: left;
+    text-align-last: left;
+    margin-left: -1em;
+  }
+}
+
 /* TABLETTE HORIZONTALE */
 /* DESKTOP */
 /* Gallerie d'images */

@@ -203,7 +203,86 @@ ________________________________________________________*/
 /* TABLETTE VERTICALE */
 
 @media screen and (min-width: 768px) {
+    article.articleLayout {
 
+        & h1 {
+            top: -2em;
+        }
+
+        & p.info {
+            top: -6em;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        & section.article {
+
+            & h2 {
+                margin-top: 5em;
+                text-align: left;
+                font-size: 1.5em;
+                margin-left: 1em;
+            }
+
+            & p {
+                text-align: left;
+                text-align-last: left;
+                width: 95%;
+                margin-left: 1.6em;
+            }
+
+            & section.bonheur {
+                width: 100vw;
+                & h2 {
+                    text-align: left;
+                    top: 1em;
+                    right: 0;
+                    width: 30em;
+
+                    & br {
+                        display: none;
+                    }
+                }
+
+                & img {
+                    width: 100%;
+                }
+
+                & p {
+                    text-align: left;
+                    width: 90%;
+                    right: 0;
+                    background-color: hsla(0, 0%, 100%, 0);
+                    color: var(--blanc);
+                }
+            }
+
+        }
+
+        section.promo {
+            
+            margin-top: -5em;
+            margin-bottom : 1em;
+
+            & img {
+                height: 11em;
+            }
+        }
+
+        section.recettes {
+            & h2 {
+                text-align: left;
+                font-size: 1.5em; 
+                margin-left: 0;
+            }
+
+            & p {
+                text-align: left;
+                text-align-last: left;
+                margin-left: -1em;
+            }
+        }
+    }
 }
 
 /* TABLETTE HORIZONTALE */
