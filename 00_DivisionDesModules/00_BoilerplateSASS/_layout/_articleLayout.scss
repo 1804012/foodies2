@@ -28,11 +28,11 @@ article.articleLayout {
 
     & h1 {
         color: var(--orange);
-        font-size: 3.7em;
+        font-size: 2.3em;
         text-transform: uppercase;
         font-style: italic;
         position: relative;
-        top: -1.5em;
+        top: -3em;
     }
 
     & h4 {
@@ -40,18 +40,18 @@ article.articleLayout {
     }
 
     p.info {
-        font-size: 2em;
+        font-size: 1.25em;
         width: 90%;
         text-align: justify;
         text-align-last: center;
         position: relative;
-        top: -6.5em;
+        top: -9.2em;
         font-weight: bolder;
     }
 
     section.article {
         margin: {
-            top: -12em;
+            top: -13em;
         }
 
         & h2 {
@@ -63,8 +63,9 @@ article.articleLayout {
 
         & p {
             margin: auto;
+            margin-top: -1em;
             width: 90%;
-            font-size: 1.5em;
+            font-size: 1em;
             text-align: justify;
             text-align-last: center;
         }
@@ -98,14 +99,23 @@ article.articleLayout {
         }
     }
 
-    
+    & section.promo {
+        margin-top: -8em;
+        margin-bottom: 1em;
+
+        & img {
+            height: 7em;
+        }
+    }
 
     & section.recettes {
         & h2 {
-            width: 50%;
+            width: 80%;
             margin: auto;
+            margin-top: 1em;
+            margin-bottom: -0.5em;
             color: var(--orange);
-            font-size: 2.5em;
+            font-size: 2em;
             text-align: center;
         }
         
@@ -113,9 +123,19 @@ article.articleLayout {
             margin: auto;
             padding: 1em;
             width: 90%;
-            font-size: 1.5em;
+            font-size: 1em;
             text-align: justify;
             text-align-last: center;
+        }
+
+        & a.lien_recette {
+            @include display_flex_column_center;
+            color: var(--blanc);
+            text-decoration: none;
+            width: 15em;
+            height: 3em;
+            background-color: var(--vert);
+            border-radius: 1em;
         }
         
         & div.suggestion {
@@ -131,51 +151,50 @@ article.articleLayout {
                 display: block;
                 text-align: center;
                 position: relative;
-                top: -22em;
+                top: -14.5em;
                 font-size: 2em;
             }
-            
-            & .info_suggestion {
+
+            & p.info_suggestion {
+                z-index: 1000;
                 position: relative;
-                bottom: 15em;
+                bottom: 18em;
             }
 
             & a {
-                @extend .info_suggestion;
-                text-align: center;
-                text-decoration: none;
-                font-size: 1.5em;
-            }
-
-            & div.bouton {
-                @include display_flex_column_center;
-                color: var(--blanc);
-                background-color: var(--vert);
-                width: 11em;
-                height: 3em;
-                border-radius: 1em;
-
-                &:hover {
-                    background-color: var(--vert-hover);
-                }
+                @extend .lien_recette;
+                position: relative;
+                bottom: 18em;
             }
         }
-        
+
         & div.suggestion:nth-of-type(2) {
-            margin-bottom: -10em;
-            & p {
+            margin-bottom: -20em;
+            & p.info_suggestion {
+                z-index: 1000;
                 position: relative;
-                bottom: 23em;
+                bottom: 29em;
             }
 
             & a {
+                @extend .lien_recette;
                 position: relative;
-                bottom: 23em;
+                bottom: 29em;
             }
         }
 
         & div.suggestion:nth-of-type(3) {
-            margin-top: -20em;
+            & p.info_suggestion {
+                z-index: 1000;
+                position: relative;
+                bottom: 21em;
+            }
+
+            & a {
+                @extend .lien_recette;
+                position: relative;
+                bottom: 21em;
+            }
         }
     }
 }

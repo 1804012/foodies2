@@ -317,11 +317,11 @@ article.articleLayout aside.membre {
 
 article.articleLayout h1 {
   color: var(--orange);
-  font-size: 3.7em;
+  font-size: 2.3em;
   text-transform: uppercase;
   font-style: italic;
   position: relative;
-  top: -1.5em;
+  top: -3em;
 }
 
 article.articleLayout h4 {
@@ -329,17 +329,17 @@ article.articleLayout h4 {
 }
 
 article.articleLayout p.info {
-  font-size: 2em;
+  font-size: 1.25em;
   width: 90%;
   text-align: justify;
   text-align-last: center;
   position: relative;
-  top: -6.5em;
+  top: -9.2em;
   font-weight: bolder;
 }
 
 article.articleLayout section.article {
-  margin-top: -12em;
+  margin-top: -13em;
 }
 
 article.articleLayout section.article h2 {
@@ -350,8 +350,9 @@ article.articleLayout section.article h2 {
 
 article.articleLayout section.article p {
   margin: auto;
+  margin-top: -1em;
   width: 90%;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: justify;
   text-align-last: center;
 }
@@ -382,11 +383,22 @@ article.articleLayout section.bonheur img {
   width: 75%;
 }
 
+article.articleLayout section.promo {
+  margin-top: -8em;
+  margin-bottom: 1em;
+}
+
+article.articleLayout section.promo img {
+  height: 7em;
+}
+
 article.articleLayout section.recettes h2 {
-  width: 50%;
+  width: 80%;
   margin: auto;
+  margin-top: 1em;
+  margin-bottom: -0.5em;
   color: var(--orange);
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -394,9 +406,31 @@ article.articleLayout section.recettes p {
   margin: auto;
   padding: 1em;
   width: 90%;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: justify;
   text-align-last: center;
+}
+
+article.articleLayout section.recettes a.lien_recette, article.articleLayout section.recettes div.suggestion a, article.articleLayout section.recettes div.suggestion:nth-of-type(2) a, article.articleLayout section.recettes div.suggestion:nth-of-type(3) a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--blanc);
+  text-decoration: none;
+  width: 15em;
+  height: 3em;
+  background-color: var(--vert);
+  border-radius: 1em;
 }
 
 article.articleLayout section.recettes div.suggestion {
@@ -425,62 +459,45 @@ article.articleLayout section.recettes div.suggestion h3 {
   display: block;
   text-align: center;
   position: relative;
-  top: -22em;
+  top: -14.5em;
   font-size: 2em;
 }
 
-article.articleLayout section.recettes div.suggestion .info_suggestion, article.articleLayout section.recettes div.suggestion a {
+article.articleLayout section.recettes div.suggestion p.info_suggestion {
+  z-index: 1000;
   position: relative;
-  bottom: 15em;
+  bottom: 18em;
 }
 
 article.articleLayout section.recettes div.suggestion a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
-article.articleLayout section.recettes div.suggestion div.bouton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--blanc);
-  background-color: var(--vert);
-  width: 11em;
-  height: 3em;
-  border-radius: 1em;
-}
-
-article.articleLayout section.recettes div.suggestion div.bouton:hover {
-  background-color: var(--vert-hover);
+  position: relative;
+  bottom: 18em;
 }
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(2) {
-  margin-bottom: -10em;
+  margin-bottom: -20em;
 }
 
-article.articleLayout section.recettes div.suggestion:nth-of-type(2) p {
+article.articleLayout section.recettes div.suggestion:nth-of-type(2) p.info_suggestion {
+  z-index: 1000;
   position: relative;
-  bottom: 23em;
+  bottom: 29em;
 }
 
 article.articleLayout section.recettes div.suggestion:nth-of-type(2) a {
   position: relative;
-  bottom: 23em;
+  bottom: 29em;
 }
 
-article.articleLayout section.recettes div.suggestion:nth-of-type(3) {
-  margin-top: -20em;
+article.articleLayout section.recettes div.suggestion:nth-of-type(3) p.info_suggestion {
+  z-index: 1000;
+  position: relative;
+  bottom: 21em;
+}
+
+article.articleLayout section.recettes div.suggestion:nth-of-type(3) a {
+  position: relative;
+  bottom: 21em;
 }
 
 /* Gallerie d'images */
