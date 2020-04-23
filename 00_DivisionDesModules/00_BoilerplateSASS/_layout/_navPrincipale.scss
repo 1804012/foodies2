@@ -15,6 +15,7 @@ nav {
     z-index: 1000;
 
     & i.close {
+        display: block;
         color: var(--orange);
         font-size: 2em;
     }

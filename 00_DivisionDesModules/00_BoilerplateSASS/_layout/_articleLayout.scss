@@ -441,8 +441,152 @@ ________________________________________________________*/
 @media screen and (min-width: 1920px) {
 
     article.articleLayout {
+        @include display_flex_column_center;
+        width: 70%;
+        margin: auto;
+        background-color: var(--blanc);
+        position: relative;
+        top: -15em;
+        padding-top: 1em;
+
         & span {
             display: none;
         }
+
+        & >h3 {
+            display: flex;
+            background-color: var(--vert);
+            width: 90%;
+            height: 2em;
+            color: var(--blanc);
+            align-items: center;
+            padding-left: 1em;
+            font-weight: 400;
+        }
+
+        & aside.membre {
+            @include display_flex_column_center;
+            margin-right: auto;
+            margin-left: 5%;
+
+            & img {
+                width: 11em;
+            }
+
+            & p {
+                font-size: 3em;
+                margin: 0;
+                text-align: center;
+
+                &:last-of-type {
+                    font-size: 2em;
+                }
+            }
+
+        }
+
+        & h1 {
+            font-size: 4em;
+            font-weight: 300;
+            font-style: normal;
+            color: var(--noir);
+            width: 80%;
+            margin-left: auto;
+            margin-top: -2.5em;
+        }
+
+        & h4 {
+            display: block;
+            color: var(--gris);
+            font-size: 1.5em;
+            margin-top: -7em;
+            margin-left: -26.5em;
+        }
+
+        & p.info {
+            position: unset;
+            width: 70%;
+            margin-right: 10%;
+            margin-left: auto;
+            font-weight: 400;
+            text-align: center;
+            text-align-last: unset;
+            margin-top: 0.5em;
+            margin-bottom: 5em;
+        }
+
+        & section.article {
+            @include display_flex_column_center;
+            width: 80%;
+            margin-top: -10em;
+            margin-right: 2.5%;
+            margin-left: auto;
+
+            & h2 {
+                margin-left: 5%;
+                margin-right: auto;
+            }
+
+            & p {
+                margin-right: auto;
+                margin-left: 5%;
+            }
+            
+            & section.bonheur {
+                @include display_flex_column_center;
+                margin-top: -12em;
+                margin-left: 5%;
+                margin-right: auto;
+                position: unset;
+                width: 80%;
+                
+                & h2 {position: unset;
+                    display: flex;
+                    margin-left: 0;
+                    margin-right: auto;
+                    margin-top: 7em;
+                    font-size: 2em;
+                    width: 100%;
+                    
+                    & br:last-of-type {
+                        display: none;
+                    }
+                }
+                
+                & picture {
+                    width: 60%;
+                }
+                
+                & p {
+                    color: var(--noir);
+                    font-size: 1em;
+                    font-weight: 400;
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 12em;
+                    font-size: 1.5em;
+                }
+
+            }
+            
+        }
+
+        & section.promo {
+            @include display_flex_column_center;
+            position: absolute;
+            left: 4em;
+            top: 35em;
+
+            & img {
+                width: 11em;
+            }
+            & img:nth-of-type(2) {
+                height: 25em;
+            }
+            
+           
+        }
+        
     }
+
 }

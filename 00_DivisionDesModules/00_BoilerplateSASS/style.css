@@ -74,6 +74,7 @@ header a {
 }
 
 header i.material-icons {
+  display: block;
   font-size: 3em;
   position: absolute;
   top: 0.4em;
@@ -88,11 +89,11 @@ ________________________________________________________*/
     background-image: url(../01_Images/restaurant_1920x621.jpg);
     background-size: cover;
     background-position: center;
-    height: 38em;
+    height: 30em;
     z-index: 0;
     position: unset;
   }
-  header i.menu {
+  header i.material-icons {
     display: none;
   }
   header a {
@@ -113,6 +114,7 @@ nav {
 }
 
 nav i.close {
+  display: block;
   color: var(--orange);
   font-size: 2em;
 }
@@ -774,8 +776,195 @@ ________________________________________________________*/
 
 /* DESKTOP */
 @media screen and (min-width: 1920px) {
+  article.articleLayout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    margin: auto;
+    background-color: var(--blanc);
+    position: relative;
+    top: -15em;
+    padding-top: 1em;
+  }
   article.articleLayout span {
     display: none;
+  }
+  article.articleLayout > h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--vert);
+    width: 90%;
+    height: 2em;
+    color: var(--blanc);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1em;
+    font-weight: 400;
+  }
+  article.articleLayout aside.membre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+    margin-left: 5%;
+  }
+  article.articleLayout aside.membre img {
+    width: 11em;
+  }
+  article.articleLayout aside.membre p {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+  }
+  article.articleLayout aside.membre p:last-of-type {
+    font-size: 2em;
+  }
+  article.articleLayout h1 {
+    font-size: 4em;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--noir);
+    width: 80%;
+    margin-left: auto;
+    margin-top: -2.5em;
+  }
+  article.articleLayout h4 {
+    display: block;
+    color: var(--gris);
+    font-size: 1.5em;
+    margin-top: -7em;
+    margin-left: -26.5em;
+  }
+  article.articleLayout p.info {
+    position: unset;
+    width: 70%;
+    margin-right: 10%;
+    margin-left: auto;
+    font-weight: 400;
+    text-align: center;
+    text-align-last: unset;
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+  }
+  article.articleLayout section.article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin-top: -10em;
+    margin-right: 2.5%;
+    margin-left: auto;
+  }
+  article.articleLayout section.article h2 {
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  article.articleLayout section.article p {
+    margin-right: auto;
+    margin-left: 5%;
+  }
+  article.articleLayout section.article section.bonheur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -12em;
+    margin-left: 5%;
+    margin-right: auto;
+    position: unset;
+    width: 80%;
+  }
+  article.articleLayout section.article section.bonheur h2 {
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 7em;
+    font-size: 2em;
+    width: 100%;
+  }
+  article.articleLayout section.article section.bonheur h2 br:last-of-type {
+    display: none;
+  }
+  article.articleLayout section.article section.bonheur picture {
+    width: 60%;
+  }
+  article.articleLayout section.article section.bonheur p {
+    color: var(--noir);
+    font-size: 1em;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    margin-top: 12em;
+    font-size: 1.5em;
+  }
+  article.articleLayout section.promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    left: 4em;
+    top: 35em;
+  }
+  article.articleLayout section.promo img {
+    width: 11em;
+  }
+  article.articleLayout section.promo img:nth-of-type(2) {
+    height: 25em;
   }
 }
 

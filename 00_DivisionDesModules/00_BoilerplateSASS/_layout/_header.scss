@@ -16,6 +16,7 @@ header {
     }
 
     & i.material-icons {
+        display: block;
         font-size: 3em;
         position: absolute;
         top: 0.4em;
@@ -33,11 +34,11 @@ ________________________________________________________*/
         background-image: url(../01_Images/restaurant_1920x621.jpg);
         background-size: cover;
         background-position: center;
-        height: 38em;
+        height: 30em;
         z-index: 0;
         position: unset;
 
-        & i.menu {
+        & i.material-icons {
             display: none;
         }
 

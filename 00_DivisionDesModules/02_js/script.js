@@ -7,7 +7,7 @@
     /* script pour l'ouverture et la fermeture de la navigation mobile*/
     if(window.outerWidth >= 1920) {
         document.getElementById('navigation').className = 'ouvert';
-    } else {
+    } else if(window.outerWidth < 1920) {
         $('i.menu').on('click', function(){
             $('nav').removeClass('fermer').addClass('ouvert');
             $('body').addClass('unscrollable');
@@ -20,3 +20,5 @@
     }
     /* fin du script pour l'ouverture et la fermeture de la navigation mobile */
 });
+
+
