@@ -16,10 +16,15 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="../00_DivisionDesModules/01_Images/logo_dark.svg" alt="logo foodies"></a>
+        <a href="#">
+            <picture>
+                <source media="(min-width: 1920px)" srcset="../00_DivisionDesModules/01_Images/logo_complet_dark.svg">
+                <img src="../00_DivisionDesModules/01_Images/logo_dark.svg" alt="logo foodies">
+            </picture>
+        </a>
         <i class="material-icons menu">menu</i>
     </header>
-    <nav class="fermer">
+    <nav class="fermer" id="navigation">
         <i class="material-icons close">close</i>
         <ul>
             <a href="#"><li>Recettes</li></a>

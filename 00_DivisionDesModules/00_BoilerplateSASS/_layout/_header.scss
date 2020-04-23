@@ -22,3 +22,28 @@ header {
         left: 0.4em;
     }
 }
+
+/*////[BREAKPOINTS]
+________________________________________________________*/
+
+/* DESKTOP */
+
+@media screen and (min-width: 1920px) {
+    header {
+        background-image: url(../01_Images/restaurant_1920x621.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 38em;
+        z-index: 0;
+        position: unset;
+
+        & i.menu {
+            display: none;
+        }
+
+        & a {
+            width: 35%;
+            margin-top: -15em;
+        }
+    }
+}

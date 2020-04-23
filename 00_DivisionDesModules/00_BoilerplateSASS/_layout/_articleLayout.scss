@@ -440,4 +440,9 @@ ________________________________________________________*/
 
 @media screen and (min-width: 1920px) {
 
+    article.articleLayout {
+        & span {
+            display: none;
+        }
+    }
 }
